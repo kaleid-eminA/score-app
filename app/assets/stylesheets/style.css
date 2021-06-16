@@ -1,0 +1,24 @@
+.container {
+  margin-top: 100px;
+  margin-left: 50px;
+  padding: 10px;
+
+
+}
+
+.contents.row {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_a {
+  color: rgba(58, 56, 56, 0.37);
+  width: 100%;
+    background-color: #89c7de67;
+    text-align: center;
+    padding: 15px 0;
+
+ position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    margin-bottom: 0px;
+}
