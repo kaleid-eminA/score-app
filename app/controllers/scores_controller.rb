@@ -1,12 +1,16 @@
 class ScoresController < ApplicationController
   def index
     @score = Score.new
+    @scores = Score.all
   end
 
   def create
     @score = Score.new(scores_params)
     if @score.save
       redirect_to root_path
+    else
+
+      render :index
     end
   end
 
