@@ -1,6 +1,6 @@
 <%= form_with model: @score, class: 'form', local: true do |f| %>
   <div class="form-input">
-    <%= f.text_field :content, class: 'form-score', placeholder: 'type a score' %>
+    <%= f.number_field :score, step: "0.1", class: 'form-score', placeholder: 'type a score' %>
  
   <%= f.submit '送信', class: 'form-submit' %>
   </div>

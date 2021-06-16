@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2021_06_16_015118) do
 
   create_table "scores", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id"
-    t.integer "score"
-    t.integer "score_avg"
+    t.decimal "score", precision: 4, scale: 1, null: false
+    t.decimal "score_avg", precision: 3, scale: 1
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_scores_on_user_id"
