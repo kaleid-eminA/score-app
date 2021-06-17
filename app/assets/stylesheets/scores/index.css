@@ -3,3 +3,25 @@
   margin-left: 50px;
   padding: 10px;
 }
+
+#score_b {
+  margin: 15px;
+}
+
+.score_d {
+display: flex;
+align-items: center;
+border-bottom: black 1px solid;
+}
+
+.score_date {
+  margin-left: 20px;
+}
+
+.score_total {
+  color: rgb(7, 97, 67);
+}
+
+.score_c {
+  margin-left: 20px;
+}

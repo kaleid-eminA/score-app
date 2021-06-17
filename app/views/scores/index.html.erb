@@ -1,7 +1,13 @@
 <%= form_with model: @score, class: 'form', local: true do |f| %>
   <div class="form-input">
     <%= f.number_field :score, step: "0.1", class: 'form-score', placeholder: 'type a score' %>
- 
   <%= f.submit '送信', class: 'form-submit' %>
   </div>
 <% end %>
+
+<%= javascript_include_tag "//www.google.com/jsapi" %>
+<%= line_chart @chart, points: false, series: false, curve: false, discrete: true, xtitle: "日付", ytitle: "スコア", width: "100%", height: "500px", decimal: ",", min: 400, max: 654 %>
+
+<div id="score_b">
+  <%= render @scores%>
+</div>
