@@ -2,6 +2,8 @@ class ScoresController < ApplicationController
   def index
     @score = Score.new
     @scores = Score.all.order("created_at DESC")
+    @chart = Score.pluck(:created_at, :score)
+
   end
 
   def create
