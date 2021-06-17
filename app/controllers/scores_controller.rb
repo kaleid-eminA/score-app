@@ -1,4 +1,5 @@
 class ScoresController < ApplicationController
+  before_action :authenticate_user!
   def index
     @score = Score.new
     @scores = Score.all.order("created_at DESC")
