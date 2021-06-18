@@ -1,5 +1,7 @@
 class ScoresController < ApplicationController
   before_action :authenticate_user!
+
+
   def index
     @score = Score.new
     @scores = current_user.scores.order("created_at DESC")
@@ -16,6 +18,13 @@ class ScoresController < ApplicationController
     end
   end
 
+
+   def destroy
+    @score = Score.find(params[:id])
+    @score.destroy
+    redirect_to root_path
+   end
+   
   private
 
   def scores_params
