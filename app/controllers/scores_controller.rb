@@ -1,9 +1,9 @@
 class ScoresController < ApplicationController
+  before_action :authenticate_user!
   def index
     @score = Score.new
-    @scores = Score.all.order("created_at DESC")
-    @chart = Score.pluck(:created_at, :score)
-
+    @scores = current_user.scores.order("created_at DESC")
+    @chart = current_user.scores.pluck(:created_at, :score)
   end
 
   def create

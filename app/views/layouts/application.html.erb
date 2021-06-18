@@ -15,14 +15,22 @@
     <h1>
         <a href="/">ShootingScore</a>
     </h1>
-    <nav class="pc-nav">
-        <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-        </ul>
-    </nav>
+    
+    <% if user_signed_in? %>
+        <div class="user_nav ">
+          <div class="user_name">
+            <%= current_user.nickname %>
+          </div>
+              <div class="user_out">
+                  <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+              </div>
+        <% else %>
+          <div class="user_in">
+            <%= link_to "ログイン", new_user_session_path, class: "post" %>
+          </div>
+        </div>
+        <% end %>
+        
 </header>
 
     <%= yield %>

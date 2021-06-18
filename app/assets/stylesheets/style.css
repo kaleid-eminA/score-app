@@ -23,3 +23,16 @@
     bottom: 0;
     margin-bottom: 0px;
 }
+
+.user_nav {
+  display: flex;
+  margin:0 0 0 auto
+}
+
+.user_out {
+  margin-left: 35px;
+}
+
+.user_in {
+  margin:0 0 0 auto
+}
