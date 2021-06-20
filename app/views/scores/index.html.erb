@@ -10,10 +10,11 @@
 
 
 <div class="sccore_destroy">
-  <%= link_to "一番新しいスコアを削除", score_path(@scores.ids), method: :delete %>
-  <%= link_to "全てのスコアを削除", score_path(@scores.ids), method: :delete %>
+  <%= link_to "一番新しいスコアを削除", score_path(@scores.ids, @scores.ids), method: :delete %>
+  <%= link_to "全てのスコアを削除", score_path(@scores.ids, all: true), method: :delete %>
 </div>
 
 <div id="score_b">
     <%= render @scores%>
 </div>
+

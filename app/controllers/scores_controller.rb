@@ -13,18 +13,22 @@ class ScoresController < ApplicationController
     if @score.save
       redirect_to root_path
     else
-
       render :index
     end
   end
 
 
-   def destroy
-    @score = Score.find(params[:id])
-    @score.destroy
+  def destroy
+    if params[:all].present?
+      @score = Score.where(params[:id])
+      current_user.scores.destroy_all
+    else
+      @score = Score.find(params[:id])
+      @score.destroy
+    end
     redirect_to root_path
    end
-   
+
   private
 
   def scores_params
