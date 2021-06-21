@@ -25,3 +25,22 @@ border-bottom: black 1px solid;
 .score_c {
   margin-left: 20px;
 }
+
+.score_destroy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score_destroy_solo {
+  background-color: blanchedalmond;
+  border: black 1px solid;
+  margin: 5px 0 0 10%;
+  padding: 0 10px 0 10px;
+}
+
+.score_destroy_all {
+  background-color: rgb(201, 184, 159);
+  border: black 1px solid;
+  margin: 5px 10% 0 0;
+  padding: 0 10px 0 10px;
+}
