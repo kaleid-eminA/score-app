@@ -11,7 +11,7 @@ class ScoresController < ApplicationController
   def create
     @score = Score.new(scores_params)
     if @score.save
-      redirect_to root_path
+      redirect_to scores_path
     else
       render :index
     end
@@ -26,7 +26,7 @@ class ScoresController < ApplicationController
       @score = Score.find(params[:id])
       @score.destroy
     end
-    redirect_to root_path
+    redirect_to scores_path
 
    end
 

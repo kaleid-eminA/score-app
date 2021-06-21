@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: "scores#index"
+  root to: "top#index"
   resources :scores 
   resources :top, only:[:index]
 end
