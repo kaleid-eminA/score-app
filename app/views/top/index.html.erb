@@ -1,2 +1,10 @@
-<h1>Top#index</h1>
-<p>Find me in app/views/top/index.html.erb</p>
+<div class="example">
+  <%= image_tag "gpr1.jpeg", size: '1920x1080', class:"pict" %>
+  <p>
+  あなたの射撃を管理します<br>
+  <%= link_to "ログイン", new_user_session_path, class: "post_top" %>
+  <%= link_to "新規登録", new_user_registration_path, class: "post_top" %>
+  </p>
+
+</div>
+
