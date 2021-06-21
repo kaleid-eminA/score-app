@@ -27,6 +27,7 @@ class ScoresController < ApplicationController
       @score.destroy
     end
     redirect_to root_path
+
    end
 
   private
