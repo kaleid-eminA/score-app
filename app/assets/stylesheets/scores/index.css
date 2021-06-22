@@ -4,6 +4,18 @@
   padding: 10px;
 }
 
+.form-score {
+  width: 100px;
+  
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 #score_b {
   margin: 15px;
 }

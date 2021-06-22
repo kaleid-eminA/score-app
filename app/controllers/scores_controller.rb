@@ -13,6 +13,7 @@ class ScoresController < ApplicationController
     if @score.save
       redirect_to scores_path
     else
+      
       render :index
     end
   end
