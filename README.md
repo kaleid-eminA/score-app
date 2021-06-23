@@ -4,7 +4,7 @@
 - ShootingScore
 
 ### アプリケーション概要
-　このアプリケーションは、エアライフル ISSF 10m 60発競技の得点を管理するアプリケーションです。
+このアプリケーションは、エアライフル ISSF 10m 60発競技の得点を管理するアプリケーションです。
 グラフと一覧でスコアを見やすく表示します。
 
 ### URL
@@ -30,7 +30,7 @@ pass: a00000
 ### gif
 [![Image from Gyazo](https://i.gyazo.com/08677fbbb945f843385c42f89ee704e8.gif)](https://gyazo.com/08677fbbb945f843385c42f89ee704e8)
 [![Image from Gyazo](https://i.gyazo.com/616ad97378ce55ea51d7ea29f68b5c62.gif)](https://gyazo.com/616ad97378ce55ea51d7ea29f68b5c62)
-　
+
  
  ### 洗い出した要件
  - 新規登録ができる
