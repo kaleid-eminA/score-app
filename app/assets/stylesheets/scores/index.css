@@ -27,7 +27,7 @@ border-bottom: black 1px solid;
 }
 
 .score_date {
-  margin-left: 20px;
+  margin: 0 0 0 auto;
 }
 
 .score_total {
