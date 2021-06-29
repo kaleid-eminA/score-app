@@ -4,9 +4,9 @@
   <div class="form-input">
     <%= f.number_field :score, step: "0.1", in: 400..650, class: 'form-score', placeholder: 'type a score' %>
   <%= f.submit '送信', class: 'form-submit' %>
+  <%= link_to "全体ランキング", rankings_path, class: "ranking_all" %>
   </div>
 <% end %>
-
 <%= javascript_include_tag "//www.google.com/jsapi" %>
 <%= line_chart @chart, points: false, series: false, curve: false, discrete: true, xtitle: "日付", ytitle: "スコア", width: "100%", height: "500px", decimal: ",", min: 400, max: 650 %>
 
