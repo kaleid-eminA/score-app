@@ -3,3 +3,11 @@
   display: flex;
   justify-content: center;
 }
+
+.score_r {
+  margin: 10px;
+}
+
+.user_name {
+  margin: 0 0 0 auto;
+}
