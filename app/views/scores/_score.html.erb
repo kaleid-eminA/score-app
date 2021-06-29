@@ -1,15 +1,20 @@
 <div class="score_d">
 
   <div class="score_total">
-    <p>TOTAL</p>
+    <i><p>TOTAL</p></i>
   </div>
 
   <div class="score_c">
-    <p><%= score.score %></p>
+    <b><p><%= score.score %></p></b>
+  </div>
+
+<div class="user_name">
+  <%= score.user.nickname %>
   </div>
 
   <div class="score_date">
     <%= l score.created_at %>
   </div>
+
   
 </div>

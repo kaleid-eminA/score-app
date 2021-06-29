@@ -27,7 +27,7 @@ border-bottom: black 1px solid;
 }
 
 .score_date {
-  margin-left: 20px;
+  margin: 0 0 0 auto;
 }
 
 .score_total {
@@ -55,4 +55,9 @@ border-bottom: black 1px solid;
   border: black 1px solid;
   margin: 5px 10% 0 0;
   padding: 0 10px 0 10px;
+}
+
+.ranking_all {
+  color: rgb(0, 0, 185);
+  margin-left: 80%;
 }

@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: "top#index"
   resources :scores 
   resources :top, only:[:index]
+  resources :rankings, only:[:index]
 end
