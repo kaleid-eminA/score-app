@@ -53,3 +53,61 @@ li {
   font-size: 14px;
 }
 
+.form-header-text {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.correct-msg-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.correct-text-field {
+    margin: 15px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-form-correct {
+  height: 100px;
+}
+
+.register-red-btn {
+margin: 15px;
+padding: 5px;
+justify-content: center;
+padding: 0 50px;
+}
+
+.send-btn-contents {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#contact_name {
+  width: 300px;
+}
+
+#email {
+  width: 300px;
+}
+
+#contact_content {
+  width: 300px;
+}

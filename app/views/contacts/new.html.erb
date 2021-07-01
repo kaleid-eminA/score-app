@@ -1,9 +1,9 @@
 <%= form_with(model: @contact, local: true) do |f| %>
     <div class='form-wrap'>
       <div class='form-header'>
-        <h5 class='form-header-text'>
+        <h3 class='form-header-text'>
           お問い合わせフォーム
-        </h5>
+        </h3>
       </div>
     </div>
     <div class="correct-msg-box">
@@ -31,7 +31,7 @@
 
             <div class="correct-text-field">
               <%= f.label "お問合せ内容(必須)" %>
-              <%= f.text_area :content, placeholder: "お問合せ内容を入力してください", class: "input-form" %>
+              <%= f.text_area :content, placeholder: "お問合せ内容を入力してください", class: "input-form-correct" %>
             </div>
 
             <div class="send-btn-contents">
@@ -41,7 +41,7 @@
                 <% end %>
               </div>
               <div class="register-btn">
-                <%= link_to "もどる", root_path, class:"register-red-btn", style:"background-color: #aaa" %>
+                <%= link_to "戻る", scores_path, class:"register-red-btn", style:"background-color: #aaa" %>
               </div>
             </div>
 
